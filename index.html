@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper AR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="scan-message">Scan the QR code to view AR</div>
+        <div class="ar-container">
+            <mindar-image-viewer id="ar-viewer">
+                <mindar-image-track targets="targets.mind">
+                    <mindar-image-anchor>
+                        <video id="ar-video" src="video.mp4" loop></video>
+                    </mindar-image-anchor>
+                </mindar-image-track>
+            </mindar-image-viewer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.scan-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ar-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+mindar-image-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+#ar-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
